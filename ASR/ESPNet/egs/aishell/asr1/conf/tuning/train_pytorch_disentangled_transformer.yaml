@@ -1,0 +1,49 @@
+# network architecture
+# encoder related
+elayers: 6
+eunits: 1024
+# decoder related
+dlayers: 6
+dunits: 1024
+# attention related
+adim: 256
+aheads: 4
+
+# Disentangled Transformer parameters
+enc_clusters: 8
+dec_clusters: 4
+var_estimation: True
+gmm_init: False
+kl_weight: 0.001
+mi_weight: 1.
+mu_grad: 5
+
+# hybrid CTC/attention
+mtlalpha: 0.3
+
+# label smoothing
+lsm-weight: 0.1
+
+# minibatch related
+batch-size: 32
+maxlen-in: 512  # if input length  > maxlen-in, batchsize is automatically reduced
+maxlen-out: 150 # if output length > maxlen-out, batchsize is automatically reduced
+
+# optimization related
+sortagrad: 0 # Feed samples from shortest to longest ; -1: enabled for all epochs, 0: disabled, other: enabled for 'other' epochs
+opt: noam
+accum-grad: 2
+grad-clip: 5
+patience: 0
+epochs: 20
+dropout-rate: 0.1
+
+# transformer specific setting
+backend: pytorch
+model-module: "espnet.nets.pytorch_backend.e2e_asr_disentangled_transformer:E2E"
+transformer-input-layer: conv2d     # encoder architecture type
+transformer-lr: 2.0
+transformer-warmup-steps: 25000
+transformer-attn-dropout-rate: 0.0
+transformer-length-normalized-loss: false
+transformer-init: pytorch

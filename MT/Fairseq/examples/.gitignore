@@ -1,0 +1,8 @@
+!*/*.sh
+!*/*.md
+wmt14_en_de_low_resource/
+wmt17_orig/
+wmt17_zh_en/
+Untitled.*
+notebooks/data
+iwslt14.tokenized.de-en

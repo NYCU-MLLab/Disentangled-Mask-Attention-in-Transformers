@@ -1,0 +1,1 @@
+from fairseq.disentangled_transformer.criterions.disentangled_label_smoothed_cross_entropy import LabelSmoothedCrossEntropyCriterion

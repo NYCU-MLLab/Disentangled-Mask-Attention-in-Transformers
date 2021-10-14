@@ -1,0 +1,5 @@
+mosesdecoder/
+orig/
+subword-nmt
+wmt14_en_de/
+iwslt14.tokenized.de-en/

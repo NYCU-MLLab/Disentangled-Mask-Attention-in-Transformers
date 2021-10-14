@@ -1,0 +1,28 @@
+{
+    "mt": {
+        "DeEn": {
+            "ckpt_file": "../../../MT/Fairseq/checkpoints/iwslt14.tokenized.de-en/disentangled_transformer/ckpt/checkpoint_avg_last_5.pt",
+            "data_path": "../../../MT/Fairseq/data-bin/iwslt14.tokenized.de-en",
+            "bpe_code": "../../../MT/Fairseq/examples/translation/iwslt14.tokenized.de-en/code"
+
+        },
+        "ZhEn": {
+            "ckpt_file": "../../../MT/Fairseq/checkpoints/wmt17_zh_en/disentangled_transformer/ckpt/checkpoint_avg_last_5.pt",
+            "data_path": "../../../MT/Fairseq/data-bin/wmt17_zh_en",
+            "bpe_code": "../../../MT/Fairseq/examples/translation/wmt17_zh_en/code"
+        },
+        "EnDe": {
+            "ckpt_file": "../../../MT/Fairseq/checkpoints/wmt14_en_de/disentangled_transformer/ckpt/checkpoint_avg_last_5.pt",
+            "data_path": "../../../MT/Fairseq/data-bin/wmt14_en_de",
+            "bpe_code": "../../../MT/Fairseq/examples/translation/wmt14_en_de/code"
+        }
+    },
+    "asr": {
+        "SpeechBrainDir": "../../../ASR/SpeechBrain",
+        "aishell": {
+            "config": "../../../ASR/SpeechBrain/recipes/AISHELL-1/ASR/transformer/hparams/train_ASR_disentangled_transformer.yaml",
+            "ckpt_dir": "../../../ASR/SpeechBrain/recipes/AISHELL-1/ASR/transformer/results/disentangled_transformer/8886/save/CKPT+average_3"
+        }
+    }
+}
+

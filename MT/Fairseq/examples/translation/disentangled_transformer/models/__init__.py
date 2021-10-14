@@ -1,0 +1,1 @@
+from fairseq.disentangled_transformer.models.disentangled_transformer import DisentangledTransformerModel
